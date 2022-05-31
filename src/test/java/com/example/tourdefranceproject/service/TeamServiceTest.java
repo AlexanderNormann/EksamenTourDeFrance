@@ -20,6 +20,7 @@ class TeamServiceTest {
   @Test
   void save() {
     Team team = new Team();
+
     Assertions.assertNotNull(team);
   }
 
@@ -27,6 +28,7 @@ class TeamServiceTest {
   void findAll() {
     Team team = new Team();
     teamService.save(team);
+
     List<Team> foundTeam = teamService.findAll();
 
     Assertions.assertNotNull(foundTeam);
