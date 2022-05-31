@@ -1,7 +1,18 @@
 package com.example.tourdefranceproject.model;
 
-import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+
+@Getter
+@Setter
+@ToString
 @Entity
 public class Rider {
 
@@ -28,5 +39,8 @@ public class Rider {
 
   @Column(name = "mountainsjerey")
   private int  mountainsJersey;
+
+
+
 
 }
