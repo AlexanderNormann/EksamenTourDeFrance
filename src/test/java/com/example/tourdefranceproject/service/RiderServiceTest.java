@@ -40,7 +40,7 @@ class RiderServiceTest {
     Rider saved = riderService.save(rider);
     riderService.deleteById(saved.getId());
 
-    Assertions.assertEquals(3, size);
+    Assertions.assertEquals(17, size);
   }
 
   @Test
